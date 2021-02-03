@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FCE000</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="wheelBtn">#FDAEB6</color>
+    <color name="screenbg">#040D14</color>
+    <color name="wheelItemLightbg">#141A1E</color>
+    <color name="wheelItemDarkbg">#040D14</color>
+
+    <string-array name="color_dash">
+        <item>@color/wheelItemLightbg</item>
+        <item>@color/wheelItemDarkbg</item>
+        <item>@color/wheelItemLightbg</item>
+        <item>@color/wheelItemDarkbg</item>
+        <item>@color/wheelItemLightbg</item>
+        <item>@color/wheelItemDarkbg</item>
+        <item>@color/wheelItemLightbg</item>
+        <item>@color/wheelItemDarkbg</item>
+        <item>@color/wheelItemLightbg</item>
+        <item>@color/wheelItemDarkbg</item>
+        <item>@color/wheelItemLightbg</item>
+        <item>@color/wheelItemDarkbg</item>
+        <item>@color/wheelItemLightbg</item>
+        <item>@color/wheelItemDarkbg</item>
+        <item>@color/wheelItemLightbg</item>
+        <item>@color/wheelItemDarkbg</item>
+        <item>@color/wheelItemLightbg</item>
+        <item>@color/wheelItemDarkbg</item>
+        <item>@color/wheelItemLightbg</item>
+        <item>@color/wheelItemDarkbg</item>
+    </string-array>
+</resources>

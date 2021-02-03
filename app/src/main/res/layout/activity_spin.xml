@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenbg"
+    tools:context=".SpinActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/screenbg"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/ticker"
+        android:layout_below="@id/toolbar"
+        android:src="@drawable/wheel_ticker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:adjustViewBounds="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <com.adefruandta.spinningwheel.SpinningWheelView
+        android:id="@+id/wheel"
+        android:layout_weight="0.2"
+        android:layout_below="@+id/ticker"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-190dp"
+        app:wheel_arrow_color="@color/wheelBtn"
+        app:wheel_arrow_width="0dp"
+        app:wheel_arrow_height="0dp"
+        app:wheel_colors="@array/color_dash"
+        app:wheel_items="@array/prizePlaceholder"
+        app:wheel_text_size="20dp"
+        app:wheel_text_color="@android:color/white"
+        app:wheel_stroke_color="@color/wheelItemLightbg"
+        app:wheel_stroke_width="2dp"
+        />
+
+    <Button
+        android:id="@+id/spinBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:text="Spin!"
+        android:background="@drawable/rounded_corners"
+        />
+
+</RelativeLayout>
