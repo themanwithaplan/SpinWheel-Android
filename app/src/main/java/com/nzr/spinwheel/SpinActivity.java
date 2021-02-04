@@ -83,7 +83,7 @@ public class SpinActivity extends AppCompatActivity implements SpinningWheelView
     }
 
     public void getData() {
-        AndroidNetworking.get("http://mockbin.org/bin/84a8a8ed-b3d9-43e0-a6d8-d04ddc311efd")
+        AndroidNetworking.get(getString(R.string.url))
                 .setPriority(Priority.LOW)
                 .build()
                 .getAsJSONArray(new JSONArrayRequestListener() {

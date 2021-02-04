@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Spin The Wheel</string>
-
+    <string name="url">http://mockbin.org/bin/539dc092-8367-414a-8892-ed3b2d666dbe</string>
     <string-array name="prizePlaceholder">
         <item>$100</item>
         <item>$200</item>
