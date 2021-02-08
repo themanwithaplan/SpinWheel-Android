@@ -43,8 +43,21 @@ public class SpinActivity extends AppCompatActivity implements SpinningWheelView
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spin);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         TextView mTitle = (TextView) toolbar.findViewById(R.id.toolbar_title);
+        wheelView = (SpinningWheelView) findViewById(R.id.wheel);
+        spinBtn = (Button) findViewById(R.id.spinBtn);
+        wheelView.setEnabled(false);
+        wheelView.setOnRotationListener(this);
+        spinBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                wheelView.rotate(50, 3000, 50);
+            }
+        });
+
+
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -53,20 +66,7 @@ public class SpinActivity extends AppCompatActivity implements SpinningWheelView
     }
 
     public void updateWheel(){
-        wheelView = (SpinningWheelView) findViewById(R.id.wheel);
-
-        spinBtn = (Button) findViewById(R.id.spinBtn);
-
         wheelView.setItems(prizes);
-        wheelView.setEnabled(false);
-        wheelView.setOnRotationListener(this);
-
-        spinBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                wheelView.rotate(50, 3000, 50);
-            }
-        });
     }
 
     @Override
